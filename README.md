@@ -138,6 +138,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Ik heb met veel apsecten rekening geprobeert te houden. Bepaalden punten zaten niet in min website dus daar heb ik ook een streep achter gezet maar het is inderdaad goed gekomen. ((Intimidatie was uiteindelijik niet nodig :)
   )
 
+
+1. wees VEEL specifieker in process
+2. wcag test moet erin staan screenshots ervan
+3. voeg formulier toe!!!
+
 </details>
 
 
