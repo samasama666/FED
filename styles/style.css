@@ -5,6 +5,7 @@
 *::after,
 *::before {
   box-sizing: border-box;
+  margin: 0;
 }
 
 
@@ -19,6 +20,9 @@
   /* startje */
   --color-text: #111;
   --color-background: #eee;
+  /* startje */
+  --color-text: #111;
+  --color-background: #eee;
 }
 
 main {
@@ -27,19 +31,45 @@ main {
   margin-top: 5rem;
 }
 
+footer {
+  background-color: ghostwhite;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: .3em;
+  padding-bottom: 2em;
+  font-size: large;
+
+}
+
+footer ul {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+
 .tweedepagina {
   max-width: 40em;
   margin-inline: auto;
 }
 
+
+
+.tweedepagina header {
+  margin: 0;
+}
+
 ul {
+  margin: 0;
   margin: 0;
   padding: 0;
 }
 
 h1,
 h2,
-h3,
 h4,
 h5,
 h6,
@@ -47,12 +77,20 @@ p {
   margin: 0;
 }
 
+h3 {
+  margin-bottom: 2em;
+}
+
 a {
+  color: black;
+  text-decoration: none;
   color: black;
   text-decoration: none;
 }
 
 body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin: 0;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -72,29 +110,43 @@ header nav {
   position: fixed;
   width: 100%;
   top: 0;
+  display: flex;
+  align-items: center;
+  background: ghostwhite;
+  padding: 2rem 2rem;
+  gap: 2rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
 
+  z-index: 2;
   z-index: 2;
 }
 
 
 ul {
   padding: 0;
+  padding: 0;
 }
 
 li {
   list-style-type: none;
+  list-style-type: none;
 }
 
 li a {
+  color: black;
   color: black;
 }
 
 header nav ul {
   display: flex;
   gap: 1rem;
+  display: flex;
+  gap: 1rem;
 }
 
-img {
+main img {
   max-width: 100%;
   border-radius: .5rem;
 }
@@ -103,13 +155,15 @@ img {
 header nav ul:nth-of-type(2) {
   margin-left: auto;
   display: none;
+  margin-left: auto;
+  display: none;
 }
 
-header nav ul:nth-of-type(2) li:nth-of-type(2) svg {
-  rotate: 90deg;
-}
 
 header nav button {
+  display: flex;
+  width: 2rem;
+  aspect-ratio: 1/1;
   display: flex;
   width: 2rem;
   aspect-ratio: 1/1;
@@ -119,7 +173,14 @@ header nav button {
   justify-content: center;
   align-items: center;
   margin-left: auto;
+  gap: .2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
 
+  background-color: transparent;
+  border: none;
   background-color: transparent;
   border: none;
 }
@@ -129,32 +190,39 @@ header nav button span {
   height: 2px;
   width: 100%;
   background-color: black;
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: black;
 }
 
 nav svg:first-of-type {
   width: 90%;
+  width: 90%;
 }
-
-
-img {
-  width: 100%;
-}
-
 
 svg {
+  width: 100%;
   width: 100%;
 }
 
 nav ul:nth-of-type(2) li {
+  width: 1rem;
   width: 1rem;
 }
 
 nav>h1 a {
   display: block;
   width: 5rem;
+  display: block;
+  width: 5rem;
 }
 
 main {
+  padding: 5rem 1rem 0;
+  position: relative;
+  z-index: 0;
+  overflow-x: hidden;
   padding: 5rem 1rem 0;
   position: relative;
   z-index: 0;
@@ -165,13 +233,13 @@ main {
 
 main>nav.active {
   transform: translateX(0);
+  transform: translateX(0);
 }
 
 main>nav {
   position: absolute;
   background-color: ghostwhite;
   transform: translateX(100vw);
-  /* top: 0; */
   z-index: 3;
   left: 0;
   width: 100vw;
@@ -183,16 +251,26 @@ main>nav {
 main>nav ul {
   display: flex;
   flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 main>nav ul li a {
   display: block;
   padding: 1rem;
   border-bottom: 1px black solid;
+  display: block;
+  padding: 1rem;
+  border-bottom: 1px black solid;
 }
 
 main>section:nth-of-type(1) ul>div {
+main>section:nth-of-type(1) ul>div {
   display: block;
+}
+
+main>section:nth-of-type(2) {
+  margin-top: 4rem;
 }
 
 main>section:nth-of-type(1) ul li {
@@ -201,11 +279,15 @@ main>section:nth-of-type(1) ul li {
 
 main>section:nth-of-type(1) ul li div {
   background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.515) 100%);
+main>section:nth-of-type(1) ul li div {
+  background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.515) 100%);
   position: absolute;
   top: 0;
   width: 100%;
   height: 100%;
 }
+
+main>section:nth-of-type(1) ul li h3 {
 
 main>section:nth-of-type(1) ul li h3 {
   position: absolute;
@@ -216,63 +298,92 @@ main>section:nth-of-type(1) ul li h3 {
   color: white;
 }
 
-main>section:nth-of-type(1) div ul ul {
-  display: flex;
-  gap: 1em;
-  margin-top: .8em;
-}
 
 main>section:nth-of-type(1)>ul {
-  margin:0;
-	padding:0;
-	list-style-type:none;
-	
-	display:grid;
-	grid-template-columns:repeat(6, 1fr);
-	gap:1em;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1em;
+}
+
+main>section:nth-of-type(1) ul li:nth-of-type(1) a h2,
+main>section:nth-of-type(1) ul li:nth-of-type(2) a h2,
+main>section:nth-of-type(1) ul li:nth-of-type(3) a h2 {
+  place-self: end start;
+  padding: 1rem;
 }
 
 
-main > section:nth-of-type(1) ul li img {
-  grid-area:1/1;
-	width:100%;
+
+main>section:nth-of-type(1) ul li img {
+  grid-area: 1/1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-main > section:nth-of-type(1) ul li:nth-of-type(1) img {
-	grid-area:1/1;
+main>section:nth-of-type(1) ul li a h2 {
+  grid-area: 1 / 1;
+  position: relative;
+  z-index: 2;
 }
 
-
-main > section:nth-of-type(1) ul li:nth-of-type(1) {
-	grid-column:span 6;
-	display:grid;
-}
-main > section:nth-of-type(1) ul li:nth-of-type(2),
-main > section:nth-of-type(1) ul li:nth-of-type(3) {
-	grid-column:span 3;
-	display:grid;
-
+main section:nth-of-type(1) ul li a {
+  display: grid;
 }
 
 
-main > section:nth-of-type(2) ul li a {
+main>section:nth-of-type(1) ul li:nth-of-type(1) img {
+  grid-area: 1/1;
+}
+
+
+main>section:nth-of-type(1) ul li:nth-of-type(1) {
+  grid-column: span 6;
+  display: grid;
+}
+
+main>section:nth-of-type(1) ul li:nth-of-type(2),
+main>section:nth-of-type(1) ul li:nth-of-type(3) {
+  grid-column: span 3;
+  display: grid;
+
+}
+
+
+main>section:nth-of-type(1) ul li:nth-of-type(1) a,
+main>section:nth-of-type(1) ul li:nth-of-type(2) a,
+main>section:nth-of-type(1) ul li:nth-of-type(3) a {
+  color: white;
+}
+
+main>section:nth-of-type(2) ul li a {
   display: flex;
   flex-direction: column;
 }
 
-main > section:nth-of-type(2) ul li div{
+main>section:nth-of-type(2) ul li div {
   display: block;
 }
 
 
-main > section:nth-of-type(1) ul li:nth-of-type(n + 4) {
-	grid-column:span 6;
+main>section:nth-of-type(1) ul li:nth-of-type(n + 4) {
+  grid-column: span 6;
   align-items: center;
-
-	display:grid;
-	grid-template-columns:20% 1fr;
-	gap:.5em;
+  display: grid;
+  grid-template-columns: 20% 1fr;
+  gap: .5em;
 }
+
+main>section:nth-of-type(1) ul li:nth-of-type(n + 4) a {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
 
 main>section:nth-of-type(2) {
   display: flex;
@@ -286,7 +397,7 @@ main>section:nth-of-type(2)>section {
 
 
 
-main>section:nth-of-type(2) section article:nth-of-type(2) ul {
+main>article:nth-of-type(1) ul {
   display: flex;
   overflow-x: auto;
   /* Zorg voor horizontaal scrollen */
@@ -301,25 +412,32 @@ main>section:nth-of-type(2) section article:nth-of-type(2) ul {
 }
 
 main>section:nth-of-type(2) section article:nth-of-type(2) {
+main>section:nth-of-type(2) section article:nth-of-type(2) {
   margin: 1rem 0;
 }
 
-main>section:nth-of-type(2) section article:nth-of-type(2) ul li {
+main>article:nth-of-type(1) ul li {
   flex: 0 0 auto;
   /* Zorg ervoor dat de items niet krimpen of groeien */
   scroll-snap-align: start;
   /* Snapt naar het midden van elk item */
-  width: 50%;
+
   /* Maak de items smaller (dunner) */
-  max-width: 150px;
+
   /* Optioneel, maximale breedte */
-  height: 200px;
+
   /* Hoogte behouden */
   border-radius: 0;
   /* Geen ronde hoeken, rechte hoeken */
   overflow: hidden;
   /* Verberg overloop */
   position: relative;
+}
+
+main>article:nth-of-type(1) ul li img {
+  height: 15rem;
+  width: 13rem;
+  object-fit: cover;
 }
 
 main>section:nth-of-type(2) section article:nth-of-type(2) ul li h4 {
@@ -332,7 +450,18 @@ main>section:nth-of-type(2) section article:nth-of-type(2) ul li h4 {
 }
 
 main>section:nth-of-type(2) section article:nth-of-type(2) ul li img {
+main>section:nth-of-type(2) section article:nth-of-type(2) ul li img {
   display: block;
+  width: 100%;
+  /* Zorgt ervoor dat de afbeelding de breedte van de container vult */
+  height: 100%;
+  /* Zorgt ervoor dat de afbeelding de volledige hoogte vult */
+  object-fit: cover;
+  /* Zorgt ervoor dat de afbeelding de container vult zonder vervorming */
+  border-radius: 4px;
+  /* Optioneel: lichte afgeronde hoeken voor de afbeelding */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* Optioneel: schaduw voor een visueel effect */
   width: 100%;
   /* Zorgt ervoor dat de afbeelding de breedte van de container vult */
   height: 100%;
@@ -346,14 +475,18 @@ main>section:nth-of-type(2) section article:nth-of-type(2) ul li img {
 }
 
 main>section:nth-of-type(2) section article:nth-of-type(3) {
+
+main>section:nth-of-type(2) section article:nth-of-type(3) {
   margin: 1rem 0;
 }
 
+main>section:nth-of-type(2) {
 main>section:nth-of-type(2) {
   gap: 1rem;
 }
 
 
+main>section:nth-of-type(2) div {
 main>section:nth-of-type(2) div {
   display: none;
   gap: 1rem;
@@ -362,10 +495,15 @@ main>section:nth-of-type(2) div {
 
 main>section:nth-of-type(2) section article:nth-of-type(1) ul,
 main>section:nth-of-type(2) section article:nth-of-type(3) ul {
+main>section:nth-of-type(2) section article:nth-of-type(1) ul,
+main>section:nth-of-type(2) section article:nth-of-type(3) ul {
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
+
+main>section:nth-of-type(2) section article:nth-of-type(1) ul li,
+main>section:nth-of-type(2) section article:nth-of-type(3) ul li {
 
 main>section:nth-of-type(2) section article:nth-of-type(1) ul li,
 main>section:nth-of-type(2) section article:nth-of-type(3) ul li {
@@ -377,9 +515,14 @@ main>section:nth-of-type(2) section article:nth-of-type(3) ul li {
 
 main>section:nth-of-type(2) section article:nth-of-type(1) ul li h4,
 main>section:nth-of-type(2) section article:nth-of-type(3) ul li h4 {
+main>section:nth-of-type(2) section article:nth-of-type(1) ul li h4,
+main>section:nth-of-type(2) section article:nth-of-type(3) ul li h4 {
   display: none;
 }
+}
 
+main>section:nth-of-type(2) section article:nth-of-type(1) ul li img,
+main>section:nth-of-type(2) section article:nth-of-type(3) ul li img {
 main>section:nth-of-type(2) section article:nth-of-type(1) ul li img,
 main>section:nth-of-type(2) section article:nth-of-type(3) ul li img {
   width: 7rem;
@@ -389,31 +532,31 @@ main>section:nth-of-type(2) section article:nth-of-type(3) ul li img {
 }
 
 main>section:nth-of-type(2) section article:nth-of-type(2) h2 {
+main>section:nth-of-type(2) section article:nth-of-type(2) h2 {
   margin: 1rem 0;
+}
 }
 
 main>section:nth-of-type(3) {
+main>section:nth-of-type(3) {
   display: flex;
-  gap: 2rem;
   flex-direction: column;
 }
 
 
-main>section:nth-of-type(3) article ul {
+main>section:nth-of-type(5) article ul {
   display: flex;
   scroll-snap-type: x mandatory;
   overflow-x: scroll;
   gap: 1rem;
 }
 
-main>section:nth-of-type(3) article ul li {
+main>section:nth-of-type(5) article ul li {
   flex: 0 0 auto;
   /* Zorg ervoor dat de items niet krimpen of groeien */
   scroll-snap-align: start;
   /* Snapt naar het midden van elk item */
   width: 35%;
-  /* Maak de items smaller (dunner) */
-  /* max-width: 150px; Optioneel, maximale breedte */
   border-radius: 0;
   /* Geen ronde hoeken, rechte hoeken */
   overflow: hidden;
@@ -422,9 +565,11 @@ main>section:nth-of-type(3) article ul li {
 }
 
 main>section:nth-of-type(3) article ul li a div {
+main>section:nth-of-type(3) article ul li a div {
   position: relative;
 }
 
+main>section:nth-of-type(3) article ul li a div img {
 main>section:nth-of-type(3) article ul li a div img {
   aspect-ratio: 1/1;
   object-fit: cover;
@@ -432,9 +577,11 @@ main>section:nth-of-type(3) article ul li a div img {
 
 
 main>section:nth-of-type(3) article h2 {
+main>section:nth-of-type(3) article h2 {
   margin: 1rem 0;
 }
 
+main>section:nth-of-type(3) article ul li a div h4 {
 main>section:nth-of-type(3) article ul li a div h4 {
   position: absolute;
   bottom: 1.5rem;
@@ -448,42 +595,50 @@ main>section:nth-of-type(3) article ul li a div h4 {
 }
 
 main>section:nth-of-type(3) article ul li a h3 {
+main>section:nth-of-type(3) article ul li a h3 {
   font-size: .8rem;
 }
 
 
-main > section:nth-of-type(1) ul li:nth-of-type(n + 4) div {
+main>section:nth-of-type(1) ul li:nth-of-type(n + 4) div {
   display: none;
 }
 
 
-main > section:nth-of-type(1) ul li:nth-of-type(1) div, 
-main > section:nth-of-type(1) ul li:nth-of-type(2) div, 
-main > section:nth-of-type(1) ul li:nth-of-type(3) div {
-  height: 90%;
+main>section:nth-of-type(1) ul li:nth-of-type(1) a div,
+main>section:nth-of-type(1) ul li:nth-of-type(2) a div,
+main>section:nth-of-type(1) ul li:nth-of-type(3) a div {
+  height: 100%;
+  border-radius: 1rem;
 }
 
 
 
 .tweedepagina main p {
-  margin: 0px 0px 1.5rem;
+  margin: 0;
 }
 
-.tweedepagina footer {
-  display: flex;
-  flex-direction: row;
-  background-color: antiquewhite;
-  border: 1px black;
-}
 
 .tweedepagina footer h3,
 p {
-  margin: 2em;
+  margin: 1em;
 }
 
 .tweedepagina video {
   width: 100%;
+  margin-bottom: 2em;
 }
+
+/* Ik probeerde hier een grijs valk te maken maar hij sprak maar niet goed aan
+.tweedepagina main section:nth-of-type(4) section:first-of-type{
+  background-color: gray;
+  margin: 1em;
+}
+
+.tweedepagina main section:nth-of-type(4) p{
+  background-color: gray;
+  margin: 1em;
+} */
 
 
 
@@ -498,117 +653,95 @@ p {
   header nav ul:nth-of-type(2) li:nth-of-type(1) a {
     display: block;
   }
+  header nav ul:nth-of-type(2) li:nth-of-type(1) a {
+    display: block;
+  }
 
-  main > section:nth-of-type(1) ul li:nth-of-type(1),
-	main > section:nth-of-type(1) ul li:nth-of-type(2) {
-		grid-column:span 3;
+  main>section:nth-of-type(1) ul li:nth-of-type(1),
+  main>section:nth-of-type(1) ul li:nth-of-type(2) {
+    grid-column: span 3;
 
-		display:grid;
-	}
+    display: grid;
+  }
 
-	main > section:nth-of-type(1) ul li:nth-of-type(1) img,
-	main > section:nth-of-type(1) ul li:nth-of-type(2) img {
-		grid-area:1/1;
-	}
+  main>section:nth-of-type(1) ul li:nth-of-type(1) img,
+  main>section:nth-of-type(1) ul li:nth-of-type(2) img {
+    grid-area: 1/1;
+  }
 
-	main > section:nth-of-type(1) ul li:nth-of-type(1) h2,
-	main > section:nth-of-type(1) ul li:nth-of-type(2) h2 {
-		grid-area:1/1;
-		place-self:end start;
-		color:white;
-	}
-	
-	
-	main > section:nth-of-type(1) ul li:nth-of-type(3),
-	main > section:nth-of-type(1) ul li:nth-of-type(4),
-	main > section:nth-of-type(1) ul li:nth-of-type(5){
-		grid-column:span 2;
+  main>section:nth-of-type(1) ul li:nth-of-type(1) a h2,
+  main>section:nth-of-type(1) ul li:nth-of-type(2) a h2,
+  main>section:nth-of-type(1) ul li:nth-of-type(3) a h2 {
+    grid-area: 1/1;
+    place-self: end start;
+    color: white;
+  }
 
-		display:grid;
-		grid-template-columns:none
-	}
-
-	main > section:nth-of-type(1) ul li:nth-of-type(3) img,
-	main > section:nth-of-type(1) ul li:nth-of-type(4) img,
-	main > section:nth-of-type(1) ul li:nth-of-type(5) img {
-		grid-area:1/1;
-	}
-
-	main > section:nth-of-type(1) ul li:nth-of-type(3) h2,
-	main > section:nth-of-type(1) ul li:nth-of-type(4) h2,
-	main > section:nth-of-type(1) ul li:nth-of-type(5) h2 {
-		grid-area:1/1;
-
-		place-self:end start;
-		
-		color:white;
-	}
-	
-	main > section:nth-of-type(1) ul li:nth-of-type(n + 6) {
-		grid-column:span 2;
-
-		display:grid;
-		grid-template-columns: 1fr;
-		gap:.5em;
-	}
-
-  main > section:nth-of-type(1) ul li:nth-of-type(1) div, 
-main > section:nth-of-type(1) ul li:nth-of-type(2) div {
-  height: 100%;
-}
+  main>section:nth-of-type(1) ul li:nth-of-type(3) a h2 {
+    padding: 0;
+  }
 
 
+  main>section:nth-of-type(1) ul li:nth-of-type(3),
+  main>section:nth-of-type(1) ul li:nth-of-type(4),
+  main>section:nth-of-type(1) ul li:nth-of-type(5) {
+    grid-column: span 2;
 
-  main > section:nth-of-type(1) ul li:nth-of-type(n + 3) h2 {
+    display: grid;
+    grid-template-columns: none
+  }
+
+  main>section:nth-of-type(1) ul li:nth-of-type(3) img,
+  main>section:nth-of-type(1) ul li:nth-of-type(4) img,
+  main>section:nth-of-type(1) ul li:nth-of-type(5) img {
+    grid-area: 1/1;
+  }
+
+  main>section:nth-of-type(1) ul li:nth-of-type(3) h2,
+  main>section:nth-of-type(1) ul li:nth-of-type(4) h2,
+  main>section:nth-of-type(1) ul li:nth-of-type(5) h2 {
+    grid-area: 1/1;
+
+    place-self: end start;
+
+    color: white;
+  }
+
+  main>section:nth-of-type(1) ul li:nth-of-type(n + 6) {
+    grid-column: span 2;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: .5em;
+  }
+
+  main>section:nth-of-type(1) ul li:nth-of-type(1) div,
+  main>section:nth-of-type(1) ul li:nth-of-type(2) div {
+    height: 100%;
+  }
+
+
+
+  main>section:nth-of-type(1) ul li:nth-of-type(n + 3) a h2 {
     grid-area: 2/1;
     color: black;
-  } 
+  }
 
-  main > section:nth-of-type(1) ul li:nth-of-type(n + 4) div {
-    height: 90%;
+  main>section:nth-of-type(1) ul li:nth-of-type(n + 4) a {
+    display: grid;
+    gap: 0;
   }
 
 
 
-  main > section:nth-of-type(1) ul li:nth-of-type(3) div {
+  main>section:nth-of-type(1) ul li:nth-of-type(3) div {
     display: none;
   }
 
-
-  
-
-  /* main {
-    padding: 6rem 10rem;
-  } */
-
-
-  /* main>section:nth-of-type(1) ul {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-  }
-
-  main>section:nth-of-type(1) ul>div {
+  header nav button {
     display: none;
+    margin-left: auto;
   }
-
-  main>section:nth-of-type(2) ul {
-    display: flex;
-    flex-direction: column;
-    gap: 2em;
-  } */
-
-
-/* 
-  main>section:nth-of-type(1) ul li {
-    border-radius: 1rem;
-    overflow: hidden;
-  }
-
-  main article:nth-of-type(1) ul:nth-of-type(1)>div {
-    display: none !important;
-  } */
-
   header nav button {
     display: none;
     margin-left: auto;
@@ -617,7 +750,13 @@ main > section:nth-of-type(1) ul li:nth-of-type(2) div {
   header nav ul:nth-of-type(2) {
     display: flex;
   }
+  header nav ul:nth-of-type(2) {
+    display: flex;
+  }
 
+  main article:nth-of-type(1) ul {
+    flex-direction: row;
+  }
   main article:nth-of-type(1) ul {
     flex-direction: row;
   }
@@ -625,12 +764,18 @@ main > section:nth-of-type(1) ul li:nth-of-type(2) div {
   main article:nth-of-type(1) ul li:nth-of-type(3) {
     display: none;
   }
-
-  main>section:nth-of-type(2) {
-    flex-direction: row;
-    margin-top: 1rem;
+  main article:nth-of-type(1) ul li:nth-of-type(3) {
+    display: none;
   }
 
+  main>section:nth-of-type(2) {
+  main>section:nth-of-type(2) {
+    flex-direction: row;
+    margin-top: 3rem;
+  }
+
+  main>section:nth-of-type(2) section article:nth-of-type(1) ul,
+  main>section:nth-of-type(2) section article:nth-of-type(3) ul {
   main>section:nth-of-type(2) section article:nth-of-type(1) ul,
   main>section:nth-of-type(2) section article:nth-of-type(3) ul {
     display: grid;
@@ -644,7 +789,16 @@ main > section:nth-of-type(1) ul li:nth-of-type(2) div {
     align-items: flex-start;
     flex-direction: column;
   }
+  main>section:nth-of-type(2) section article:nth-of-type(1) ul li,
+  main>section:nth-of-type(2) section article:nth-of-type(3) ul li {
+    align-items: flex-start;
+    flex-direction: column;
+  }
 
+  main>section:nth-of-type(2) section article:nth-of-type(1) ul li h4,
+  main>section:nth-of-type(2) section article:nth-of-type(3) ul li h4 {
+    display: block;
+  }
   main>section:nth-of-type(2) section article:nth-of-type(1) ul li h4,
   main>section:nth-of-type(2) section article:nth-of-type(3) ul li h4 {
     display: block;
@@ -657,8 +811,19 @@ main > section:nth-of-type(1) ul li:nth-of-type(2) div {
     border-radius: .5rem;
     object-fit: cover;
   }
+  main>section:nth-of-type(2) section article:nth-of-type(1) ul li img,
+  main>section:nth-of-type(2) section article:nth-of-type(3) ul li img {
+    width: 100%;
+    height: auto;
+    border-radius: .5rem;
+    object-fit: cover;
+  }
 
 
+  main>section:nth-of-type(2) section article:nth-of-type(1) ul li img,
+  main>section:nth-of-type(2) section article:nth-of-type(2) ul li img,
+  main>section:nth-of-type(2) section article:nth-of-type(3) ul li img,
+  main>section:nth-of-type(2) section article:nth-of-type(4) ul li img {
   main>section:nth-of-type(2) section article:nth-of-type(1) ul li img,
   main>section:nth-of-type(2) section article:nth-of-type(2) ul li img,
   main>section:nth-of-type(2) section article:nth-of-type(3) ul li img,
@@ -675,12 +840,34 @@ main > section:nth-of-type(1) ul li:nth-of-type(2) div {
     flex-direction: column;
   }
 
+  main>section:nth-of-type(2) div {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+  }
+
+  main>section:nth-of-type(2) div aside {
+    width: 20rem;
+    background-color: ghostwhite;
+    padding: 2rem;
+  }
   main>section:nth-of-type(2) div aside {
     width: 20rem;
     background-color: ghostwhite;
     padding: 2rem;
   }
 
+  main>section:nth-of-type(2) div aside ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  main>section:nth-of-type(2) div aside ul li {
+    margin: .5rem 0;
+    border-bottom: 1px black solid;
+    padding: 0 0 1rem;
+  }
   main>section:nth-of-type(2) div aside ul {
     display: flex;
     flex-direction: column;
@@ -703,7 +890,21 @@ main > section:nth-of-type(1) ul li:nth-of-type(2) div {
     font-size: .8rem;
     margin: 0;
   }
+  main>section:nth-of-type(2) div aside h3 {
+    font-size: .8rem;
+    margin: 0;
+    font-weight: 300;
+  }
 
+  main>section:nth-of-type(2) div aside h4 {
+    font-size: .8rem;
+    margin: 0;
+  }
+
+  main>section:nth-of-type(2) div aside:nth-of-type(2) ul li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
   main>section:nth-of-type(2) div aside:nth-of-type(2) ul li {
     display: flex;
     align-items: center;
@@ -723,11 +924,31 @@ main > section:nth-of-type(1) ul li:nth-of-type(2) div {
     display: flex;
     flex-direction: column;
   }
+  }
+
+  main>section:nth-of-type(2) div aside:nth-of-type(2) ul li img {
+    width: 3rem;
+    height: 3rem;
+    object-fit: cover;
+    border-radius: 100rem;
+    aspect-ratio: 1/1;
+  }
+
+  main>section:nth-of-type(2) div aside:nth-of-type(2) ul li a {
+    display: flex;
+    flex-direction: column;
+  }
 
   main>section:nth-of-type(2) div aside:nth-of-type(2) ul li a p {
     margin: 0;
   }
+  main>section:nth-of-type(2) div aside:nth-of-type(2) ul li a p {
+    margin: 0;
+  }
 
+  main>section:nth-of-type(3) article ul li {
+    width: 15%;
+  }
   main>section:nth-of-type(3) article ul li {
     width: 15%;
   }
@@ -737,14 +958,29 @@ main > section:nth-of-type(1) ul li:nth-of-type(2) div {
     justify-content: center;
     justify-items: center;
   }
+  [class="tweedepagina"] main section {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+  }
 
+  .tweedepagina img:nth-of-type(2) {
+    width: 2rem;
+    height: 2rem;
   .tweedepagina img:nth-of-type(2) {
     width: 2rem;
     height: 2rem;
 
 
   }
+  }
 
+  .tweedepagina section:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2em;
+  }
   .tweedepagina section:nth-of-type(2) {
     display: flex;
     flex-direction: column;
@@ -756,16 +992,19 @@ main > section:nth-of-type(1) ul li:nth-of-type(2) div {
     margin: 0px 0px 1.5rem;
   }
 
-  /* .tweedepagina main {
-    padding: 0 25rem;
-  } */
-
   .tweedepagina main p:first-of-type {
     font-weight: 100;
   }
 
-  /* .tweedepagina footer {
-    background-color: hotpink;
-  } */
+}
 
+main article ul li a div img {
+  width: 16rem;
+  height: 15rem;
+  object-fit: cover;
+
+}
+
+main article ul li a div h3 {
+  margin-bottom: 20rem;
 }
