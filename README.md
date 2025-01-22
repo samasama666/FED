@@ -139,10 +139,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   )
 
 
-1. wees VEEL specifieker in process
-2. wcag test moet erin staan screenshots ervan
-3. voeg formulier toe!!!
-
 </details>
 
 
@@ -225,3 +221,141 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
 </details>
+
+## herkansings punten (week 5,6,7,8,9,10 & 11)
+
+<details open>
+  <summary>Zorg ervoor dat je je process in deze weken hier vermeld</summary>
+
+  1. wees VEEL specifieker in process✅
+  2. wcag test moet erin staan screenshots ervan✅
+  3. voeg formulier toe!!!✅
+  
+  Alles is gelukt :)
+
+  <bevindingen>(gelijk na het eindgesprek):
+  
+  Gelijk na het gesprek ben ervoor gaan zitten en ben ik begonnen met een formulier toevoegen in mijn index.html pagina. Ik heb gekeken naar de code die op teams met ons werd gedeeld. In principe kon ik de hele code in 1 keer copy pasten en alleen de with en height een beetje aanpassen en zou ik klaar zijn. Ik moet zeggen ik heb inderdaad veel gekopieerd en geplakt. Maar wat ik wel deed bij was het in stukje kopieren zodat ik wist wat ieder stukje code precies deed en waarom het relevant was. Daarna na afloop heb ik de code aangepast op hoe ik het wou en FOILA klaar is kees. Een hele mooie functionerend formulier!
+
+  formulier ✅
+
+
+  Nu kan ik beginnen met de WCAG toets opnieuw afgaan.
+
+  Er is inmiddels heel wat tijd voorbij gegaan sinds ik het formulier heb toegegvoegd in mijn code. Ik was erg afgeleid met andere vakken. Maar terug naar wat er gedaan moest worden. de WCAG toets. Ik ga de toets opnieuw afnemen van de NOS website zelf maar ook van mijn eigen website zelf en kijken of mijn website aan de bevindingen voldoet.
+
+  NOS pagina:
+  keyboard:
+  er is een hele goed tezien focusstate.
+  de keyboard focus matched wat er tezien is goed.
+
+  mobile and touch:
+  site can rotate nicely
+  <img src="/.images/IMG_BFBFCEDA86DB-1.jpeg" alt="foto van een rotate menu">
+  horizontaal scrollen begrijp ik niet???
+  button, links en iconen kunnen goed op geklikt worden
+  ja er is ruimte tussen interactive items.
+
+  Headings:
+  ja heading elementen worden gebruikt om de context voor te stellen
+  Ja er wordt maar 1 H1 gebruikt per pagina
+  Er worden geen heading levels geskipt
+
+  Lists:
+  Ja ol,ul en li's worden gebruikt in de context van een list.
+
+  Images:
+  Niet alle images hadden een alt tekst
+  ik begrijp niet wat er bedoelt word met " null attribute values"??
+  er wordt niet bij alle plaathjes tekst laten zien  ook niet alle complexe plaatjes
+  Ook hier wordt er niet bij alle plaatjes een alt tekst aangeboden
+
+  Media:
+  Ja alle media atributies zitten niet op autoplay
+  Ja alle media tributies kunnen gepauzeerd worden
+  ik begrijp niet wat er wordt bedoelt met video- confirm the precanse of captions
+  ook begrijp ik audeo transcript niet.
+
+  Controls:
+  Ja er worden elementen gebruikt voor links
+  Ja de links zien eruit als links
+  Ja controls hebben een focus state
+  Ja button elementen worden als buttons gebruikt
+  nee geen visable skip
+  ook geen identivicatie voor links die naat een nieuw tablat gaan.
+
+  Appearance:
+  Ja light darkmode is gesupport
+  Ja hoge contrasten zijn gesupport
+  Ja 200% tekst size is gesupport
+  Ja kleur is niet de enige manier waarop informatie wordt overgebracht
+
+  Animation:
+  Ja animaties zijn niet te flashy
+  Ja je kunt via tab een video op pauze zetten
+  Ik begrijp niet wat er bedoelt word met "animation obeys the prefers reduduced motion media query"
+
+  Color contrast:
+  Alles onder color contrast is een ja dus dat is helemaal goed :)
+
+
+
+
+ Mijn NOS pagina: 
+ keyboard:
+  er is een hele goed tezien focusstate.
+  de keyboard focus matched wat er tezien is goed.
+
+  mobile and touch:
+  site can rotate nicely
+  <img src="/.images/IMG_83C22914204C-1.jpeg" alt="foto van een rotate menu">
+  horizontaal scrollen begrijp ik niet???
+  button, links en iconen kunnen goed op geklikt worden
+  ja er is ruimte tussen interactive items.
+
+  Headings:
+  ja heading elementen worden gebruikt om de context voor te stellen
+  Ja er wordt maar 1 H1 gebruikt per pagina
+  Er worden geen heading levels geskipt
+
+  Lists:
+  Ja ol,ul en li's worden gebruikt in de context van een list.
+
+  Images:
+  alle images hadden een alt tekst
+  ik begrijp niet wat er bedoelt word met " null attribute values"??
+  er wordt  bij alle plaatjes alt tekst laten zien  ook alle complexe plaatjes
+  Ook hier wordt er bij alle plaatjes een alt tekst aangeboden
+
+  Media:
+  Ja alle media atributies zitten niet op autoplay
+  Ja alle media tributies kunnen gepauzeerd worden
+  ik begrijp niet wat er wordt bedoelt met video- confirm the precanse of captions
+  ook begrijp ik audeo transcript niet.
+
+  Controls:
+  Ja er worden elementen gebruikt voor links
+  Ja de links zien eruit als links
+  Ja controls hebben een focus state
+  Ja button elementen worden als buttons gebruikt
+  nee geen visable skip
+  ook geen identivicatie voor links die naat een nieuw tablat gaan.
+
+  Appearance:
+  nee light darkmode is niet gesupport
+  Ja hoge contrasten zijn gesupport
+  nee 200% tekst size is niet gesupport
+  Ja kleur is niet de enige manier waarop informatie wordt overgebracht
+
+  Animation:
+  Ja animaties zijn niet te flashy
+  Ja je kunt via tab een video op pauze zetten
+  Ik begrijp niet wat er bedoelt word met "animation obeys the prefers reduduced motion media query"
+
+  Color contrast:
+  Alles onder color contrast is een ja dus dat is helemaal goed :)
+
+
+Dat was de WCAG checklist onder mijn website en die van NOS zelf.
+
+  <bevindingen>
